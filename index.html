@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 운세는</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <p id="message">🤡운세를 알려주지🤡</p>
+    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+
+    <script>
+        function showRandomMessage() {
+            const messages = [
+                "오늘의 운세는 빵점입니다ㅠㅠ 운이 없네염",
+                "오늘의 운세는 77점입니다! 완전 럭키비키🍀",
+                "오늘의 운세는 31점입니다.. 똥밟아라💩💩",
+                "오늘의 운세는 99점! 행운이 가득할고양",
+                "오늘의 운세는 💕감점💕입니다ㅋ"
+            ];
+            document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
+        }
+    </script>
+</body>
+</html>
 
